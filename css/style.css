@@ -505,6 +505,7 @@ label.error{
   color: #fff;
 }
   /* 39d63e */
+  /* 2670c9 */
 .text-primary{
   color:#2670c9!important;
 }
@@ -1567,6 +1568,7 @@ a.brand:focus{
   text-decoration: none;
   color:#fff;
   transition:opacity 0.3s;
+  cursor: default !important;
 }
 
 .project-row a{
@@ -1609,6 +1611,7 @@ a.brand:focus{
   font-size:3.68rem;
   font-weight: 400;
   margin:0;
+  cursor: default;
 }
 
 .project-detail-row .project-title{
@@ -1680,7 +1683,10 @@ a.brand:focus{
 /* 3.6 Section Partners */
 
 
-
+.null-padding{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
 .row-partners{
   margin:0 -5rem 0;
 }
@@ -1749,6 +1755,7 @@ a.brand:focus{
   margin:0 auto;
   max-width: 100%;
   opacity: 0.4;
+  cursor: pointer;
 }
 
 .col-partner:hover img{
@@ -1758,7 +1765,89 @@ a.brand:focus{
   transition: all 0.5s;
 }
 
+/* Modal images */
 
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 45%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: relative;
+  top: -6px;
+  right: 238px;
+  color: #f1f1f1;
+  font-size: 57px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* end modal images */
 
 /* 3.7 Section Testimonials */
 

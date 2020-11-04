@@ -251,8 +251,39 @@
 		});
 	}
 
-	
-	
 
-
+	
 })(jQuery);
+
+
+window.addEventListener('load', function () {
+	if (document.getElementById("close-modal")) {
+		var modal = document.getElementById("ModalGallery")
+		var images = document.querySelectorAll(".partner-inner img")
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		var close = document.getElementById("close-modal")
+		console.log("Entro")
+		images.forEach(function(e){
+			e.addEventListener("click", imgModal.bind(this, e))
+		})
+
+		close.addEventListener("click",() => {
+			modal.style.display = "none";
+		})
+		document.addEventListener("keydown", (event) => {
+			if (event.key === "Escape") {
+				modal.style.display = "none";
+			}
+		})
+
+		function imgModal(e) {
+			modal.style.display = "block";
+			modalImg.src = e.src;
+			captionText.innerHTML = e.alt;
+		}
+	}
+});
+
+
+  
