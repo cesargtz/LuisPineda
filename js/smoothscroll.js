@@ -58,8 +58,9 @@ var refreshSize;
 var deltaBuffer = [];
 var isMac = /^Mac/.test(navigator.platform);
 
-var key = { left: 37, up: 38, right: 39, down: 40, spacebar: 32, 
-            pageup: 33, pagedown: 34, end: 35, home: 36 };
+var key = {  };
+// var key = { left: 37, up: 38, right: 39, down: 40, spacebar: 32, 
+//             pageup: 33, pagedown: 34, end: 35, home: 36 };
 
 
 /***********************************************
@@ -70,9 +71,9 @@ var key = { left: 37, up: 38, right: 39, down: 40, spacebar: 32,
  * Tests if smooth scrolling is allowed. Shuts down everything if not.
  */
 function initTest() {
-    if (options.keyboardSupport) {
-        addEvent('keydown', keydown);
-    }
+    // if (options.keyboardSupport) {
+    //     addEvent('keydown', keydown);
+    // }
 }
 
 /**
