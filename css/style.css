@@ -558,7 +558,7 @@ label.error{
   position: absolute;
   left: 0;
   right: 0;
-  top: -1px;
+  top: -25px;
   width: 100%;
   height: 0;
   background: #272727;
@@ -1077,7 +1077,8 @@ a.brand:focus{
 }
 
 .pp-scrollable .vertical-centred{
-  padding-top: 10.3rem;
+  /* padding-top: 10.3rem; */
+  padding-top: 7.3rem;
   padding-bottom: 6rem;
 }
 
@@ -1780,7 +1781,7 @@ a.brand:focus{
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
+  z-index: 6; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -2241,6 +2242,22 @@ a.brand:focus{
   
 }
 
+.blog-fb{
+  background-color: rgba(255,255,255,.7);
+  height: 100%;
+}
 
+.blog-new{
+  width: 100%;
+  height: 100%;
+  background: #0000008a;
+  padding: 10px;
+}
 
-
+.owl-dot span{
+  width: 15px;
+  height: 15px;
+}
+.top-blog{
+  margin-top: 50px;
+}

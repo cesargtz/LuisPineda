@@ -121,7 +121,7 @@
 			nav:false,
 			navText:[],
 
-		 	dots:true
+			 dots:true
 		});
 
 	}
@@ -254,7 +254,12 @@
 
 	
 })(jQuery);
-
+// ! important
+//  * Prueba
+// ? Questions
+// Todo: por hacer
+// //param myparam parameto
+// 
 
 window.addEventListener('load', function () {
 	if (document.getElementById("close-modal")) {
